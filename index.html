@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap webpage design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ 
+    <header>
+    <!--nav section starts-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 border-bottom fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-1" href="#">Techno-<span class="text-primary">Web</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+              <li class="nav-item">
+                <a class="nav-link active text-primary" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#Services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#Services">Web Development</a></li>
+                  <li><a class="dropdown-item" href="#Services">App development</a></li>
+                  <li><a class="dropdown-item" href="#Services">Graphics Design</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#Services">SEO</a></li>
+                  <li><a class="dropdown-item" href="#Services">Digital Marketing</a></li>
+                  <li><a class="dropdown-item" href="#Services">Mobile App</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+       <!--nav section ends-->
+
+       <!--carousel section starts-->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner.jpg" class="d-block w-100" alt="img banner">
+            <div class="carousel-caption d-md-block">
+              <h5 class="text-capitalize">jorder Forster</h5>
+              <p>photography is my hobby</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner1.jpg" class="d-block w-100" alt="img banner1">
+            <div class="carousel-caption d-md-block">
+              <h5 class="text-capitalize">Emma watson</h5>
+              <p>I am picturizing the some beautiful pictures</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner 3.jpg" class="d-block w-100" alt="img banner3">
+            <div class="carousel-caption d-md-block">
+              <h5 class="text-capitalize">Christiana </h5>
+              <p>my Favourite hobby is a photography.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--carousel section ends-->
+    </header>
+    <!--header section ends-->
+
+    <!--About section starts-->
+    <section class="About my-5" id="About">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 >About<span class="text-primary">me</span></h1>
+                <hr class="w-25 m-auto">
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+                  <h1>What do you <span class="text-primary">want to know?</span></h1>
+                  <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, consequatur sed! Ut ex 
+                    tempora ipsum harum iste optio inventore amet, adipisci sed doloremque tenetur placeat accusamus 
+                    nulla quibusdam laborum omnis!</p>
+                    <button type="button" class="btn btn-light mb-5">More About Me</button>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              My Hobbies
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              My Qualification
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              My Dreams
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end" >
+                   <img src="img/s4.jpg" class="img-fluid img-thumbnail">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--About section ends-->
+
+    <!--Service section starts-->
+    <section class="services py-5 bg-light" id="Services">
+        <div class="container">
+            <div class="text-center my-4 mt-md-5">
+                <h1>Our<span class="text-primary">Services</span></h1>
+                <hr class="w-25 m-auto">
+            </div>
+            <div class="row">
+               <div class="col-sm-12 col-md-4 col-lg-4 col-12 mb-3">
+                <div class="card bg-primary text-white">
+                    <div class="card-body">
+                      <i class="fa fa-users bg-white p-2 text-dark rounded mb-2"></i>
+                      <h5 class="card-title">Web Development</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, animi.</p>
+                      <a href="#" class="btn btn-primary">Book Now!</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                <div class="card bg-primary text-white mb-3">
+                    <div class="card-body">
+                      <i class="fa fa-code bg-white p-2 text-dark rounded mb-2"></i>
+                      <h5 class="card-title">App Development</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, veritatis!</p>
+                      <a href="#" class="btn btn-primary">Book Now!</a>
+                    </div>
+                  </div>
+             </div>
+             <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                <div class="card bg-primary text-white mb-3">
+                    <div class="card-body">
+                      <i class="fa fa-bars bg-white p-2 text-dark rounded mb-2"></i>
+                      <h5 class="card-title">Graphics Design</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, error?</p>
+                      <a href="#" class="btn btn-primary">Book Now!</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                <div class="card bg-primary text-white mb-3">
+                    <div class="card-body">
+                      <i class="fa fa-home bg-white p-2 text-dark rounded mb-2"></i>
+                      <h5 class="card-title">SE0</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, suscipit?</p>
+                      <a href="#" class="btn btn-primary">Book Now!</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                <div class="card bg-primary text-white mb-3">
+                    <div class="card-body">
+                      <i class="fa fa-floppy-disk bg-white p-2 text-dark rounded mb-2"></i>
+                      <h5 class="card-title">Digital Marketing</h5>
+                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, incidunt.</p>
+                      <a href="#" class="btn btn-primary">Book Now!</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                <div class="card bg-primary text-white mb-3">
+                    <div class="card-body">
+                      <i class="fa fa-phone bg-white p-2 text-dark rounded mb-2"></i>
+                      <h5 class="card-title">Mobile App</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, numquam?</p>
+                      <a href="#" class="btn btn-primary">Book Now!</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="Team my-5 py-5 text-center" id="Team">
+      <div class="container">
+        <div class="text-center my-5">
+          <h1>Our<span class="text-primary">Team</span></h1>
+          <hr class="w-25 m-auto">
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card mb-3" >
+              <div class="card-body">
+                <img src="img/team1.jpg" class="img-fluid rounded-circle border border-primary p-2">
+                <h5 class="card-title mt-5">Andrew</h5>
+                <p class="card-text">Front-end Developer</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div> 
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card mb-3">
+              <div class="card-body">
+                <img src="img/team2.jpg" class="img-fluid rounded-circle border border-primary p-2">
+                <h5 class="card-title mt-5">Liza Ray</h5>
+                <p class="card-text">App Developer</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div> 
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card mb-3" >
+            <div class="card-body">
+              <img src="img/team3.jpg" class="img-fluid rounded-circle border border-primary p-2">
+              <h5 class="card-title mt-5">Mathew</h5>
+              <p class="card-text">Web Developer</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div> 
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!--service section ends-->
+
+    <!--Contact section starts-->
+    <section class="Contact py-5" id="Contact">
+      <div class="container">
+        <div class="text-center my-5">
+          <h1>Feel Free<span class="text-primary"> to Connect</span></h1>
+          <hr class="w-25 m-auto">
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+          <form class="row g-3" id="form" name="form" method="post" action="">
+            <div class="col-md-6">
+              <label for="mail" class="form-label" id="mail-label">Email:</label>
+              <input type="text" class="form-control" name="mail" id="mail" spellcheck="false" onkeyup="validateemail()">
+              <small id="e-error" class="d-block mb-3 text-danger"></small>
+            </div>
+            <div class="col-md-6">
+              <label for="password" class="form-label" id="password-label">Password:</label>
+              <input type="text" class="form-control"name="password" id="password" spellcheck="false" onkeyup="validatepassword()">
+              <small id="p-error" class="d-block mb-3 text-danger"></small>
+            </div>
+            <div class="col-12">
+              <label for="address" class="form-label" name="address-label">Address:</label>
+              <input type="text" class="form-control" id="address" name="address"  spellcheck="false" onkeyup="validateaddress()">
+              <small id="add-error" class="d-block mb-3 text-danger"></small>
+            </div>
+            <div class="col-md-6">
+              <label for="city" class="form-label" id="city-label">City:</label>
+              <input type="text" class="form-control" name="city" id="city" spellcheck="false" onkeyup="validatecity()">
+              <small id="c-error" class="d-block mb-3 text-danger"></small>
+            </div>
+            <div class="col-md-4">
+              <label for="state" class="form-label" id="select-label" >State:</label>
+              <select id="state" class="form-select" aria-label="Default select example" onclick="validatestate()">
+                <option selected value="-1">Open this select menu</option>
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="kerala">kerala</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Andhra pradesh">Andhra pradesh</option>
+                <option value="Telagana">Telagana</option>
+                <option value="Mumbai">Mumbai</option>
+              
+              </select>
+              <small id="s-error" class="d-block mb-3 text-danger"></small>
+            </div>
+            <div class="col-md-2">
+              <label for="pincode" class="form-label" id="pincode-label">Pincode:</label>
+              <input type="text" class="form-control" name="pincode" id="pincode" spellcheck="false" onkeyup="validatepincode()">
+              <small id="pin-error" class="d-block mb-3 text-danger"></small> 
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="gridCheck" id="gridCheck" spellcheck="false" onkeyup="validatecheck()">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+                <small id="check-error" class="d-block mb-3 text-danger"></small>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end p-4" >
+          <img src="img/s6.jpg" class="img-fluid img-thumbnail">
+        </div>
+      </div>
+      </div>
+    </section>
+    <!--Contact section ends-->
+    
+    <div class="container-fluid bg-primary text-white p-2 text-center fs-4">
+      Developed by Vignesh S
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
